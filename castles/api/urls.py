@@ -1,9 +1,9 @@
 from django.urls import path
 from rest_framework.urlpatterns import format_suffix_patterns
-from castle.app.api import views
+from .views import castle_list, castle_detail
 
 urlpatterns = [
-    path('books', views.book_list),
-    path('books/<int:pk>', views.book_detail),
+    path('castles', castle_list),
+    path('castles/<int:pk>', castle_detail),
 ]
 urlpatterns = format_suffix_patterns(urlpatterns)

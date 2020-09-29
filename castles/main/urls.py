@@ -1,5 +1,4 @@
 from django.urls import path
-
 from castle.users.views import (
     user_detail_view,
     user_redirect_view,
